@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtualenv
+.venv/
+venv/
+env/
+
+# Data / downloads
+data/
+datasets/
+*.pt
+*.pth
+*.ckpt
+
+# Outputs
+*.mp4
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.webm
+runs/
+outputs/
+logs/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
