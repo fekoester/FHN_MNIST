@@ -1,0 +1,754 @@
+[
+  {
+    "dataset": "mnist",
+    "method": "logreg",
+    "label": "Logistic regression (pixels)",
+    "test_acc": 0.9218,
+    "best_epoch": 4,
+    "train_time_s": 23.97013211250305,
+    "trainable_params": 7850,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.37836720884930003,
+        "val_loss": 0.32316943969726564,
+        "val_acc": 0.9122,
+        "time_s": 4.694906711578369
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.2950769305966117,
+        "val_loss": 0.30202954711914065,
+        "val_acc": 0.915,
+        "time_s": 4.352848768234253
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.28315073614120484,
+        "val_loss": 0.3146460693359375,
+        "val_acc": 0.9132,
+        "time_s": 4.662283658981323
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.27785142780434,
+        "val_loss": 0.2976216491699219,
+        "val_acc": 0.919,
+        "time_s": 4.609008550643921
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.27216303737163544,
+        "val_loss": 0.3033471801757813,
+        "val_acc": 0.9188,
+        "time_s": 5.1084206104278564
+      }
+    ]
+  },
+  {
+    "dataset": "mnist",
+    "method": "mlp",
+    "label": "MLP 784-512-10",
+    "test_acc": 0.9775,
+    "best_epoch": 4,
+    "train_time_s": 142.33396196365356,
+    "trainable_params": 407050,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.21149403462409974,
+        "val_loss": 0.12638639373779298,
+        "val_acc": 0.9614,
+        "time_s": 24.226742029190063
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.08421748655032028,
+        "val_loss": 0.10086430816650391,
+        "val_acc": 0.9686,
+        "time_s": 22.519484758377075
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.058402539764751085,
+        "val_loss": 0.10262747344970703,
+        "val_acc": 0.9726,
+        "time_s": 79.54345083236694
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.04110216008208015,
+        "val_loss": 0.09703303985595703,
+        "val_acc": 0.9758,
+        "time_s": 8.888457536697388
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.03301772450872443,
+        "val_loss": 0.0967900161743164,
+        "val_acc": 0.9738,
+        "time_s": 6.6239705085754395
+      }
+    ]
+  },
+  {
+    "dataset": "mnist",
+    "method": "fhn_reservoir",
+    "label": "FHN, readout only (BP)",
+    "test_acc": 0.9232,
+    "best_epoch": 4,
+    "train_time_s": 89.12095904350281,
+    "trainable_params": 5130,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.4243761433471333,
+        "val_loss": 0.3244923645019531,
+        "val_acc": 0.9088,
+        "time_s": 13.17900538444519
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.3040483825640245,
+        "val_loss": 0.3089930725097656,
+        "val_acc": 0.911,
+        "time_s": 33.52245283126831
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.2843562901583585,
+        "val_loss": 0.29807479248046875,
+        "val_acc": 0.9154,
+        "time_s": 13.8102867603302
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.2737004533594305,
+        "val_loss": 0.2847855743408203,
+        "val_acc": 0.9182,
+        "time_s": 13.481624364852905
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.26589478906718167,
+        "val_loss": 0.28807692260742185,
+        "val_acc": 0.917,
+        "time_s": 13.344462394714355
+      }
+    ]
+  },
+  {
+    "dataset": "mnist",
+    "method": "fhn_bp_frozen_rec",
+    "label": "FHN, BPTT, W_rec frozen",
+    "test_acc": 0.9706,
+    "best_epoch": 5,
+    "train_time_s": 107.73135995864868,
+    "trainable_params": 407050,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.2771068045312708,
+        "val_loss": 0.1782072540283203,
+        "val_acc": 0.95,
+        "time_s": 22.201144218444824
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.1445592825033448,
+        "val_loss": 0.16529871215820313,
+        "val_acc": 0.955,
+        "time_s": 21.526907920837402
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.10508455877195705,
+        "val_loss": 0.1311362030029297,
+        "val_acc": 0.9634,
+        "time_s": 20.613603830337524
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.08425634365190159,
+        "val_loss": 0.16652584838867188,
+        "val_acc": 0.9592,
+        "time_s": 20.72663164138794
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.07091875563751568,
+        "val_loss": 0.11636000366210937,
+        "val_acc": 0.9668,
+        "time_s": 20.616724491119385
+      }
+    ]
+  },
+  {
+    "dataset": "mnist",
+    "method": "fhn_bp",
+    "label": "FHN, BPTT, all weights",
+    "test_acc": 0.9624,
+    "best_epoch": 5,
+    "train_time_s": 123.8863878250122,
+    "trainable_params": 669194,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.29760551360303705,
+        "val_loss": 0.20553146057128907,
+        "val_acc": 0.9426,
+        "time_s": 24.816890239715576
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.17688974944786592,
+        "val_loss": 0.1877582061767578,
+        "val_acc": 0.9488,
+        "time_s": 24.507269382476807
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.143243910835006,
+        "val_loss": 0.2003104248046875,
+        "val_acc": 0.9444,
+        "time_s": 23.680285453796387
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.13388445467677984,
+        "val_loss": 0.1777885040283203,
+        "val_acc": 0.957,
+        "time_s": 23.907046794891357
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.12476480675339699,
+        "val_loss": 0.1570480438232422,
+        "val_acc": 0.9612,
+        "time_s": 24.71401333808899
+      }
+    ]
+  },
+  {
+    "dataset": "mnist",
+    "method": "bio_teacher_out",
+    "label": "FHN, teacher, readout only",
+    "test_acc": 0.9096,
+    "best_epoch": 3,
+    "train_time_s": 97.56903505325317,
+    "trainable_params": 5130,
+    "history": [
+      {
+        "epoch": 1,
+        "train_ce": 0.5697370600678704,
+        "train_acc": 0.8579454545454546,
+        "val_ce": 0.403180224609375,
+        "val_acc": 0.8916,
+        "time_s": 31.266340017318726
+      },
+      {
+        "epoch": 2,
+        "train_ce": 0.37655339977091007,
+        "train_acc": 0.8934727272727273,
+        "val_ce": 0.3590341613769531,
+        "val_acc": 0.8992,
+        "time_s": 32.07854390144348
+      },
+      {
+        "epoch": 3,
+        "train_ce": 0.3456626251253215,
+        "train_acc": 0.9005090909090909,
+        "val_ce": 0.33859855346679685,
+        "val_acc": 0.903,
+        "time_s": 31.99988317489624
+      }
+    ]
+  },
+  {
+    "dataset": "mnist",
+    "method": "bio_teacher",
+    "label": "FHN, teacher, 3-factor",
+    "test_acc": 0.9503,
+    "best_epoch": 3,
+    "train_time_s": 128.15110659599304,
+    "trainable_params": 669194,
+    "history": [
+      {
+        "epoch": 1,
+        "train_ce": 0.37821211876693095,
+        "train_acc": 0.8868909090909091,
+        "val_ce": 0.27089327697753907,
+        "val_acc": 0.9236,
+        "time_s": 42.60022330284119
+      },
+      {
+        "epoch": 2,
+        "train_ce": 0.22664439582455564,
+        "train_acc": 0.9320909090909091,
+        "val_ce": 0.2519452331542969,
+        "val_acc": 0.926,
+        "time_s": 41.358384132385254
+      },
+      {
+        "epoch": 3,
+        "train_ce": 0.18177611357928677,
+        "train_acc": 0.9456909090909091,
+        "val_ce": 0.18796825256347657,
+        "val_acc": 0.9452,
+        "time_s": 42.03763675689697
+      }
+    ]
+  },
+  {
+    "dataset": "mnist",
+    "method": "bio_rl_out",
+    "label": "FHN, reward, readout only",
+    "test_acc": 0.8736,
+    "best_epoch": 3,
+    "train_time_s": 103.62475275993347,
+    "trainable_params": 5130,
+    "history": [
+      {
+        "epoch": 1,
+        "train_ce": 1.0150715568867597,
+        "train_acc": 0.7347090909090909,
+        "val_ce": 0.8870681396484374,
+        "val_acc": 0.81,
+        "time_s": 33.90205526351929,
+        "train_reward": 0.6194181818181819
+      },
+      {
+        "epoch": 2,
+        "train_ce": 0.8415052269453352,
+        "train_acc": 0.8127272727272727,
+        "val_ce": 0.8046321166992187,
+        "val_acc": 0.8204,
+        "time_s": 33.66224265098572,
+        "train_reward": 0.7649636363636364
+      },
+      {
+        "epoch": 3,
+        "train_ce": 0.5945003423658284,
+        "train_acc": 0.8467636363636364,
+        "val_ce": 0.49411351318359376,
+        "val_acc": 0.8678,
+        "time_s": 33.85249066352844,
+        "train_reward": 0.8021818181818182
+      }
+    ]
+  },
+  {
+    "dataset": "mnist",
+    "method": "bio_rl",
+    "label": "FHN, reward, 3-factor",
+    "test_acc": 0.8972,
+    "best_epoch": 3,
+    "train_time_s": 126.95213890075684,
+    "trainable_params": 669194,
+    "history": [
+      {
+        "epoch": 1,
+        "train_ce": 1.0074047993426973,
+        "train_acc": 0.7350545454545454,
+        "val_ce": 0.8759399536132813,
+        "val_acc": 0.8122,
+        "time_s": 43.365593671798706,
+        "train_reward": 0.6279272727272728
+      },
+      {
+        "epoch": 2,
+        "train_ce": 0.698616526326808,
+        "train_acc": 0.8269454545454545,
+        "val_ce": 0.47619757690429687,
+        "val_acc": 0.8638,
+        "time_s": 41.26292014122009,
+        "train_reward": 0.7801636363636364
+      },
+      {
+        "epoch": 3,
+        "train_ce": 0.42727244081402366,
+        "train_acc": 0.8798545454545454,
+        "val_ce": 0.418027392578125,
+        "val_acc": 0.888,
+        "time_s": 40.29956769943237,
+        "train_reward": 0.8350727272727273
+      }
+    ]
+  },
+  {
+    "dataset": "fashion",
+    "method": "logreg",
+    "label": "Logistic regression (pixels)",
+    "test_acc": 0.8368,
+    "best_epoch": 4,
+    "train_time_s": 23.065059423446655,
+    "trainable_params": 7850,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.5284499312227423,
+        "val_loss": 0.46887745361328126,
+        "val_acc": 0.8354,
+        "time_s": 4.730612516403198
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.4433496119845997,
+        "val_loss": 0.4704628723144531,
+        "val_acc": 0.8366,
+        "time_s": 4.56753134727478
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.42770539927049117,
+        "val_loss": 0.5121628356933594,
+        "val_acc": 0.8206,
+        "time_s": 4.4559783935546875
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.42195679923837837,
+        "val_loss": 0.45254197998046874,
+        "val_acc": 0.8456,
+        "time_s": 4.324853897094727
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.41535471783117817,
+        "val_loss": 0.4673502685546875,
+        "val_acc": 0.8406,
+        "time_s": 4.301135540008545
+      }
+    ]
+  },
+  {
+    "dataset": "fashion",
+    "method": "mlp",
+    "label": "MLP 784-512-10",
+    "test_acc": 0.8745,
+    "best_epoch": 5,
+    "train_time_s": 36.28730654716492,
+    "trainable_params": 407050,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.468774853702025,
+        "val_loss": 0.390597900390625,
+        "val_acc": 0.857,
+        "time_s": 6.696987867355347
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.3520662500511516,
+        "val_loss": 0.3657387390136719,
+        "val_acc": 0.8692,
+        "time_s": 7.569017171859741
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.3153061641866511,
+        "val_loss": 0.36162626342773435,
+        "val_acc": 0.8658,
+        "time_s": 6.859604120254517
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.29160130448774857,
+        "val_loss": 0.370894970703125,
+        "val_acc": 0.8718,
+        "time_s": 7.1519200801849365
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.2728273892879486,
+        "val_loss": 0.35436812133789064,
+        "val_acc": 0.8836,
+        "time_s": 7.086357355117798
+      }
+    ]
+  },
+  {
+    "dataset": "fashion",
+    "method": "fhn_reservoir",
+    "label": "FHN, readout only (BP)",
+    "test_acc": 0.8426,
+    "best_epoch": 5,
+    "train_time_s": 68.97118067741394,
+    "trainable_params": 5130,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.5597004818829623,
+        "val_loss": 0.47381826171875,
+        "val_acc": 0.8308,
+        "time_s": 13.84717345237732
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.44862912907166913,
+        "val_loss": 0.4559160278320312,
+        "val_acc": 0.841,
+        "time_s": 13.72502851486206
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.4302585395119407,
+        "val_loss": 0.4460064453125,
+        "val_acc": 0.843,
+        "time_s": 13.085397481918335
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.4188604612437162,
+        "val_loss": 0.44521189575195314,
+        "val_acc": 0.8416,
+        "time_s": 13.046651840209961
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.41131891827149825,
+        "val_loss": 0.43005330200195313,
+        "val_acc": 0.8486,
+        "time_s": 13.11144733428955
+      }
+    ]
+  },
+  {
+    "dataset": "fashion",
+    "method": "fhn_bp_frozen_rec",
+    "label": "FHN, BPTT, W_rec frozen",
+    "test_acc": 0.8565,
+    "best_epoch": 5,
+    "train_time_s": 109.56899642944336,
+    "trainable_params": 407050,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.5061664891849864,
+        "val_loss": 0.4676585144042969,
+        "val_acc": 0.8228,
+        "time_s": 21.23890256881714
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.40554309036948466,
+        "val_loss": 0.4189604248046875,
+        "val_acc": 0.8518,
+        "time_s": 21.898372411727905
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.37243910308751194,
+        "val_loss": 0.43607149658203126,
+        "val_acc": 0.8444,
+        "time_s": 21.45527720451355
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.35514945563403044,
+        "val_loss": 0.4377873107910156,
+        "val_acc": 0.846,
+        "time_s": 21.382625341415405
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.3375061516501687,
+        "val_loss": 0.4157656066894531,
+        "val_acc": 0.8612,
+        "time_s": 21.540369272232056
+      }
+    ]
+  },
+  {
+    "dataset": "fashion",
+    "method": "fhn_bp",
+    "label": "FHN, BPTT, all weights",
+    "test_acc": 0.8602,
+    "best_epoch": 5,
+    "train_time_s": 124.5302586555481,
+    "trainable_params": 669194,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.5297430169885808,
+        "val_loss": 0.5074710876464844,
+        "val_acc": 0.8076,
+        "time_s": 26.06500244140625
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.43048218207792804,
+        "val_loss": 0.42784026489257815,
+        "val_acc": 0.85,
+        "time_s": 24.93524408340454
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.3899566786289215,
+        "val_loss": 0.43922559204101563,
+        "val_acc": 0.8472,
+        "time_s": 24.412031173706055
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.3786044726458463,
+        "val_loss": 0.49481419067382815,
+        "val_acc": 0.829,
+        "time_s": 23.235125064849854
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.3580497115568681,
+        "val_loss": 0.4080671875,
+        "val_acc": 0.8662,
+        "time_s": 23.78700304031372
+      }
+    ]
+  },
+  {
+    "dataset": "fashion",
+    "method": "bio_teacher_out",
+    "label": "FHN, teacher, readout only",
+    "test_acc": 0.8183,
+    "best_epoch": 3,
+    "train_time_s": 94.34607481956482,
+    "trainable_params": 5130,
+    "history": [
+      {
+        "epoch": 1,
+        "train_ce": 0.676022991875085,
+        "train_acc": 0.7784545454545454,
+        "val_ce": 0.5493845703125,
+        "val_acc": 0.808,
+        "time_s": 30.72054934501648
+      },
+      {
+        "epoch": 2,
+        "train_ce": 0.5175076035564596,
+        "train_acc": 0.8208,
+        "val_ce": 0.5040022338867187,
+        "val_acc": 0.8222,
+        "time_s": 31.09237313270569
+      },
+      {
+        "epoch": 3,
+        "train_ce": 0.48561617633754556,
+        "train_acc": 0.8315090909090909,
+        "val_ce": 0.48495885620117185,
+        "val_acc": 0.8294,
+        "time_s": 30.42482304573059
+      }
+    ]
+  },
+  {
+    "dataset": "fashion",
+    "method": "bio_teacher",
+    "label": "FHN, teacher, 3-factor",
+    "test_acc": 0.8359,
+    "best_epoch": 3,
+    "train_time_s": 122.19493651390076,
+    "trainable_params": 669194,
+    "history": [
+      {
+        "epoch": 1,
+        "train_ce": 0.7673428147822619,
+        "train_acc": 0.7676727272727273,
+        "val_ce": 0.67763359375,
+        "val_acc": 0.776,
+        "time_s": 39.48677706718445
+      },
+      {
+        "epoch": 2,
+        "train_ce": 0.6544668227988211,
+        "train_acc": 0.8110727272727273,
+        "val_ce": 0.6196251342773438,
+        "val_acc": 0.8156,
+        "time_s": 39.207093477249146
+      },
+      {
+        "epoch": 3,
+        "train_ce": 0.6153334236857058,
+        "train_acc": 0.8269272727272727,
+        "val_ce": 0.5479411987304688,
+        "val_acc": 0.8376,
+        "time_s": 41.120882749557495
+      }
+    ]
+  },
+  {
+    "dataset": "fashion",
+    "method": "bio_rl_out",
+    "label": "FHN, reward, readout only",
+    "test_acc": 0.7724,
+    "best_epoch": 3,
+    "train_time_s": 101.22441625595093,
+    "trainable_params": 5130,
+    "history": [
+      {
+        "epoch": 1,
+        "train_ce": 1.159638313642415,
+        "train_acc": 0.7050909090909091,
+        "val_ce": 1.1693650024414062,
+        "val_acc": 0.75,
+        "time_s": 33.22159218788147,
+        "train_reward": 0.6217454545454545
+      },
+      {
+        "epoch": 2,
+        "train_ce": 1.1858971434847876,
+        "train_acc": 0.7606727272727273,
+        "val_ce": 1.2884359619140624,
+        "val_acc": 0.7664,
+        "time_s": 32.943251848220825,
+        "train_reward": 0.723909090909091
+      },
+      {
+        "epoch": 3,
+        "train_ce": 1.2537788390897893,
+        "train_acc": 0.7738181818181818,
+        "val_ce": 1.3191093017578126,
+        "val_acc": 0.7746,
+        "time_s": 32.99885153770447,
+        "train_reward": 0.7437272727272727
+      }
+    ]
+  },
+  {
+    "dataset": "fashion",
+    "method": "bio_rl",
+    "label": "FHN, reward, 3-factor",
+    "test_acc": 0.774,
+    "best_epoch": 3,
+    "train_time_s": 140.4747703075409,
+    "trainable_params": 669194,
+    "history": [
+      {
+        "epoch": 1,
+        "train_ce": 1.1636813044843348,
+        "train_acc": 0.7044909090909091,
+        "val_ce": 1.1933572875976564,
+        "val_acc": 0.7526,
+        "time_s": 53.68565273284912,
+        "train_reward": 0.6252545454545455
+      },
+      {
+        "epoch": 2,
+        "train_ce": 1.2165501388116315,
+        "train_acc": 0.7629454545454546,
+        "val_ce": 1.3289288330078124,
+        "val_acc": 0.7698,
+        "time_s": 42.28019404411316,
+        "train_reward": 0.7293272727272727
+      },
+      {
+        "epoch": 3,
+        "train_ce": 1.3065608462664213,
+        "train_acc": 0.7758727272727273,
+        "val_ce": 1.36385830078125,
+        "val_acc": 0.778,
+        "time_s": 42.405259132385254,
+        "train_reward": 0.7481272727272728
+      }
+    ]
+  }
+]
